@@ -1,11 +1,14 @@
 //onde vai configurar o express
 import express from 'express';
 import routes from './routes.js'
+import mongoose from 'mongoose';
 
-
+//uso de classe é mais recomendado no backend
 class App {
   constructor() {
     this.server = express();
+
+    mongoose.connect("mongodb+srv://yasmin075souza:12345@cluster0.yuzlvbp.mongodb.net/?retryWrites=true&w=majority")
 
     this.middlewares();
     this.routes();
