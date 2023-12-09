@@ -1,11 +1,23 @@
-class HouseController{
-    async store(req,res){
-        console.log(req.body)
+import House from "../models/House"; //access for manipulation
 
-        console.log(req.file)
+class HouseController {
+  async store(req, res) {
+    const { filename } = req.file;
+    const { description, price, location, status } = req.body;
+    const { user_id } = req.headers;
 
-        return res.json({ok:true})
-    }
+    //creating registration
+    const house = await House.create({
+      user: user_id,
+      thumbnail: filename,
+      description,
+      price,
+      location,
+      status,
+    });
+
+    return res.json(house);
+  }
 }
 
-export default new HouseController()
+export default new HouseController();
