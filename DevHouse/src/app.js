@@ -2,6 +2,7 @@
 import express from "express";
 import routes from "./routes.js";
 import mongoose from "mongoose";
+import cors from "cors";
 import path from "path";
 
 //uso de classe é mais recomendado no backend
@@ -18,6 +19,9 @@ class App {
   }
 
   middlewares() {
+    //always first
+    this.server.use(cors());
+
     this.server.use(
       "/files",
       express.static(path.resolve(__dirname, "..", "uploads"))
