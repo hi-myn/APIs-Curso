@@ -21,6 +21,7 @@ routes.put(
 );
 routes.delete("/houses", HouseController.destroy);
 
+/*dashboard and reserves */
 routes.get("/dashboard", DashboardController.show);
 
 routes.post("/houses/:house_id/reserve", ReserveController.store);
