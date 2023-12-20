@@ -6,7 +6,7 @@ Este repositório contém os projetos desenvolvidos durante o curso de APIs util
    - Uma API clássica que realiza operações CRUD (Create, Read, Update, Delete) em um banco de dados.
 
 ## 2. API de Login e Cadastro de Casas
-   - Uma API especializada em autenticação de usuários, permitindo o login e o cadastro de casas.
+   - Uma API especializada em autenticação de usuários, permitindo o login, e o cadastro, atualização e exclusão de casas.
 
 ## 3. API de Task List
    - Uma API voltada para o gerenciamento de tarefas, permitindo a criação, atualização e exclusão de itens em uma lista de tarefas.
@@ -15,6 +15,10 @@ Este repositório contém os projetos desenvolvidos durante o curso de APIs util
 - Node.js
 - MongoDB e SQL (dependendo do projeto)
 - Yarn
+
+### Instalando as dependências
+ `yarn -D`
+
 
 Sinta-se à vontade para explorar cada projeto separadamente. Caso tenha alguma dúvida ou sugestão, fique à vontade para abrir uma issue.
 
@@ -27,7 +31,7 @@ This repository contains projects developed during the APIs course using Node.js
    - A classic API that performs CRUD (Create, Read, Update, Delete) operations on a database.
 
 ## 2. Login and House Registration API
-   - An API specialized in user authentication, allowing login and registration of houses.
+   - An API specialized in user authentication, allowing login and registration, update and deletion of houses.
 
 ## 3. Task List API
    - An API focused on task management, allowing the creation, update, and deletion of items in a task list.
@@ -36,6 +40,10 @@ This repository contains projects developed during the APIs course using Node.js
 - Node.js
 - MongoDB and SQL (depending on the project)
 - Yarn
+
+### Installing dependencies
+ `yarn -D`
+
 
 Feel free to explore each project separately. If you have any questions or suggestions, feel free to open an issue.
 
